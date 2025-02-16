@@ -3,7 +3,7 @@ import { LoginPage } from '../pages/LoginPage/LoginPage';
 import './App.css';
 
 function App() {
-  return <div><LoginPage/></div>;
+  return <><LoginPage/></>;
 }
 
 export default App;

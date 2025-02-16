@@ -14,10 +14,14 @@ export const LoginForm = () => {
   };
 
   return (
-    <div>
-      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-      <button onClick={handleLogin}>Войти</button>
+    <div className='p-4 border-2 border-teal-500 rounded flex justify-center items-center w-full bg-accent-content'>
+      <form className='flex flex-col w-2/4'>
+      <input className='input-primary validator p-4 text-accent' type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+      <div className='validator-hint'>Enter valid email</div>
+      <input className='input-primary validator p-4 text-accent' type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+      <div className='validator-hint'>Enter valid email</div>
+      <button className='btn btn-primary' onClick={handleLogin}>Войти</button>
+    </form>
     </div>
   );
 };
