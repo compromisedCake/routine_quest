@@ -1,7 +1,9 @@
+
+import { LoginPage } from '../pages/LoginPage/LoginPage';
 import './App.css';
 
 function App() {
-  return <div>learn react</div>;
+  return <div><LoginPage/></div>;
 }
 
 export default App;
